@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <script src="https://use.fontawesome.com/78740f51bc.js"></script>
+    <title>Author</title>
+    <script src="/js/main.min.js"> </script>
+</head>
+
+<body>
+    <!-- =====sprite===== -->
+    <svg style="display: none;">
+        <symbol id="facebook" viewBox="0 0 512 512">
+            <g>
+                <path
+                    d="M308.3,508.5c-2.5,0.1-4.1,0.3-5.7,0.3c-34.2,0-68.3-0.1-102.5,0.1c-4.8,0-6.1-1.3-6.1-6.1c0.1-79.6,0.1-159.3,0.1-238.9   c0-2.1,0-4.2,0-6.9c-18.6,0-36.7,0-55.1,0c0-28.4,0-56.3,0-85c1.9,0,3.7,0,5.4,0c15,0,30-0.1,45,0.1c3.8,0,4.8-1.1,4.8-4.8   c-0.2-22.3-0.2-44.7,0-67c0.1-15.6,2.6-30.8,9.8-44.9c10.3-19.9,26.6-32.8,47.2-40.8c16.8-6.6,34.5-9,52.3-9.3   c29-0.4,58-0.2,87-0.3c2.7,0,4.9-0.1,4.9,3.7c-0.1,27.5-0.1,55-0.1,82.5c0,0.3-0.1,0.6-0.5,1.9c-1.7,0-3.6,0-5.5,0   c-18,0-36-0.1-54,0c-10.4,0-18.8,4.2-24.1,13.3c-1.6,2.7-2.6,6.2-2.6,9.4c-0.3,17,0,34-0.2,51c0,4,1.2,5.1,5.1,5.1   c25-0.2,50-0.1,75-0.1c2,0,3.9,0,7.3,0c-3.5,28.6-6.9,56.6-10.4,84.9c-26,0-51.3,0-77.1,0C308.3,340.8,308.3,424.4,308.3,508.5z" />
+            </g>
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 512 512">
+            <g>
+                <path
+                    d="M4,440.5c55.6,5,105.7-9,151.3-43.2c-47.7-4.2-79.6-28-97.4-72.6c15.6,1.9,30.2,2.4,45.7-1.8   c-51.4-16-78.8-49.6-82.5-103.8c15.4,7.2,29.9,12.4,47,12.6c-30.5-22.9-46.1-52.6-45.5-90c0.3-17.2,4.9-33.4,14-48.7   C93.1,159.1,164,195.7,251.3,201.8c-0.5-3.8-0.8-6.8-1.2-9.9c-7.2-55.4,28.8-105.8,83.8-116.3c34.5-6.6,65,2.5,90.8,26.3   c4,3.6,7.4,4.4,12.4,3.1c20.1-5.1,39.2-12.5,57.7-22.5c-7.1,23.4-21.7,41-41.5,55.8c4.5-0.8,9.1-1.4,13.6-2.3   c4.7-1,9.4-2.1,14.1-3.4c4.5-1.2,8.9-2.6,13.3-4.1c4.5-1.5,9-3.2,14.3-4.1c-2.6,3.6-5.1,7.4-7.9,10.9c-11.6,14.7-25,27.6-39.7,39.1   c-1.5,1.2-2.8,3.8-2.7,5.6c0.8,35.5-4.2,70.1-15.7,103.7c-22.6,66.2-62,119.8-121.1,158.1c-29.2,18.9-61.1,31.3-95.2,38.5   c-33.8,7.1-67.8,8.4-101.9,4.4c-34.2-4-66.7-14.1-97.3-29.9c-8.1-4.1-15.9-8.7-23.8-13.1C3.6,441.3,3.8,440.9,4,440.5z" />
+            </g>
+        </symbol>
+
+        <symbol id="G+" viewBox="0 0 32 32">
+            <g>
+                
+                <path d="M18.034,9.562c0-0.295-0.239-0.534-0.534-0.534h-4.26c-0.026,0-0.047,0.011-0.072,0.015
+                        		C13.111,9.041,13.058,9.028,13,9.028c-2.225,0-4.034,1.543-4.034,3.44s1.81,3.44,4.034,3.44c0.307,0,0.603-0.035,0.891-0.091
+                        		c-0.075,0.291-0.116,0.625-0.066,0.998c0.047,0.349,0.186,0.683,0.368,1.008c-0.371-0.065-0.753-0.109-1.151-0.109
+                        		c-2.752,0-4.991,1.655-4.991,3.69s2.239,3.69,4.991,3.69c2.753,0,4.992-1.655,4.992-3.69c0-1.046-0.598-1.987-1.547-2.659
+                        		c-0.038-0.096-0.095-0.185-0.187-0.247c-0.848-0.574-1.323-1.184-1.413-1.812c-0.1-0.699,0.312-1.21,0.333-1.236
+                        		c0.045-0.053,0.076-0.113,0.097-0.175c1.036-0.623,1.718-1.647,1.718-2.808c0-0.921-0.432-1.754-1.125-2.372H17.5
+                        		C17.795,10.097,18.034,9.857,18.034,9.562z M13.042,24.028c-2.163,0-3.923-1.177-3.923-2.622s1.76-2.622,3.923-2.622
+                        		s3.924,1.177,3.924,2.622S15.205,24.028,13.042,24.028z M13,14.841c-1.635,0-2.966-1.064-2.966-2.372s1.331-2.372,2.966-2.372
+                        		s2.966,1.064,2.966,2.372S14.635,14.841,13,14.841z" />
+                <path d="M25.312,12h-2.341V9.625c0-0.295-0.239-0.534-0.534-0.534S21.903,9.33,22,9.5V12h-2.438
+                        		c-0.295-0.034-0.534,0.205-0.534,0.5s0.239,0.534,0.534,0.5H22v2.375c0,0.295,0.143,0.534,0.438,0.534s0.534-0.239,0.534-0.534V13
+                        		h2.341c0.295,0.034,0.534-0.205,0.534-0.5S25.607,11.966,25.312,12z" />
+            </g>
+
+        </symbol>
+    </svg>
+
+    <!-- =====header===== -->
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="header__logo">Author</div>
+                <nav class="nav">
+                    <a class="nav__link" href="#">Home</a>
+                    <a class="nav__link" href="#">Service</a>
+                    <a class="nav__link" href="#">Portfolio</a>
+                    <a class="nav__link" href="#">Team</a>
+                    <a class="nav__link" href="#">Blog</a>
+                    <a class="nav__link" href="#">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- =====intro===== -->
+    <div class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h1 class="intro_title">This is a main heading</h1>
+                <h2 class="intro_subtitle">Lorem Ipsum is simply dummy text <br> of the printing</h2>
+                <a class="btn" href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- =====services===== -->
+
+    <div class="services">
+        <div class="container">
+            <div class="services_inner">
+                <div class="services_item">
+                    <div class="services_icon">
+                        <i class="fa fa-rocket fa-3x"></i>
+                    </div>
+                    <div class="services_title">
+                        Custom Designs
+                    </div>
+                    <div class="services_text">Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                        Lorem Ipsum has been</div>
+                    <a class="btn_2" href="">Read More</a>
+                </div>
+
+                <div class="services_item">
+                    <div class="services_icon">
+                        <i class="fa fa-desktop fa-3x"></i>
+                    </div>
+                    <div class="services_title">
+                        Web Design
+                    </div>
+                    <div class="services_text">Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                        Lorem Ipsum has been</div>
+                    <a class="btn_2" href="">Read More</a>
+                </div>
+
+                <div class="services_item">
+                    <div class="services_icon">
+                        <i class="fa fa-sun-o fa-3x"></i>
+                    </div>
+                    <div class="services_title">
+                        Blog Pages
+                    </div>
+                    <div class="services_text">Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                        Lorem Ipsum has been</div>
+                    <a class="btn_2" href="">Read More</a>
+                </div>
+
+                <div class="services_item">
+                    <div class="services_icon">
+                        <i class="fa fa-superpowers fa-3x"></i>
+                    </div>
+                    <div class="services_title">
+                        Mobile friendly
+                    </div>
+                    <div class="services_text">Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                        Lorem Ipsum has been</div>
+                    <a class="btn_2" href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =====section==== -->
+    <section class="section section--portfolio">
+        <div class="container">
+            <div class="section_header">
+                <h2 class="section_title"> Portfolio</h2>
+                <div class="section_photo_all">
+                    <div class="section_photo">
+                        <img class="section_img" src="\images\portfolio\portfolio1.png">
+                    </div>
+                    <div class="section_photo">
+                        <img class="section_img" src="\images\portfolio\portfolio2.png">
+                    </div>
+                    <div class="section_photo">
+                        <img class="section_img" src="\images\portfolio\portfolio3.png">
+                    </div>
+                    <div class="section_photo">
+                        <img class="section_img" src="\images\portfolio\portfolio4.png">
+                    </div>
+                    <div class="section_photo">
+                        <img class="section_img" src="\images\portfolio\portfolio5.png">
+                    </div>
+                    <div class="section_photo">
+                        <img class="section_img" src="\images\portfolio\portfolio6.png">
+                    </div>
+                    <a class="btn btn--section" href="#">See all works</a>
+                </div>
+
+            </div> <!-- section_header -->
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section_header">
+                <h2 class="section_title"> The Team</h2>
+                <div class="section_inner">
+                    <div class="services_item">
+                        <div class="services_icon">
+                            <img class="section_face" src="\images\team\man_1.png">
+                        </div>
+                        <span class="services_title">
+                            Custom Designs
+                        </span>
+                        <span class="services_text">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry.
+                            Lorem Ipsum has been</span>
+
+                    </div>
+
+                    <div class="services_item">
+                        <div class="services_icon">
+                            <img class="section_face" src="\images\team\man_2.png">
+                        </div>
+                        <span class="services_title">
+                            Custom Designs
+                        </span>
+                        <span class="services_text">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry.
+                            Lorem Ipsum has been</span>
+
+                    </div>
+
+                    <div class="services_item">
+                        <div class="services_icon">
+                            <img class="section_face" src="\images\team\man_3.png">
+                        </div>
+                        <span class="services_title">
+                            Custom Designs
+                        </span>
+                        <span class="services_text">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry.
+                            Lorem Ipsum has been</span>
+
+                    </div>
+
+                    <div class="services_item">
+                        <div class="services_icon">
+                            <img class="section_face" src="\images\team\man_4.png">
+                        </div>
+                        <span class="services_title">
+                            Custom Designs
+                        </span>
+                        <span class="services_text">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry.
+                            Lorem Ipsum has been</span>
+
+                    </div>
+                </div>
+            </div>
+        </div> <!-- section_header -->
+        </div>
+    </section>
+
+    <!-- =====subscription===== -->
+    <div class="subscription">
+        <div class="container">
+            <div class="subscription_inner">
+                <div class="subscription_item">
+                    <div class="subscription_type">Basic</div>
+                    <div class="subscription_price">$5.01/ Month</div>
+                    <div class="subscription_privilege">Lorem ipsum</div>
+                    <div class="subscription_privilege">Dolor sit amet, consect</div>
+                    <div class="subscription_privilege">Adipiscing elit</div>
+                    <div class="subscription_privilege">Proin commodo turpis</div>
+                    <div class="subscription_privilege">lacus pulvinarvel</div>
+                    <div class="subscription_privilege">Prnare nisi pretium.</div>
+                    <div class="subscription_btn">
+                        <a class="btn btn--subscription" href="#">Buy now</a>
+                    </div>
+                </div>
+                <div class="subscription_item">
+                    <div class="subscription_type">Pro</div>
+                    <div class="subscription_price">$10.01/ Month</div>
+                    <div class="subscription_privilege">Lorem ipsum</div>
+                    <div class="subscription_privilege">Dolor sit amet, consect</div>
+                    <div class="subscription_privilege">Adipiscing elit</div>
+                    <div class="subscription_privilege">Proin commodo turpis</div>
+                    <div class="subscription_privilege">lacus pulvinarvel</div>
+                    <div class="subscription_privilege">Prnare nisi pretium.</div>
+                    <div class="subscription_btn">
+                        <a class="btn btn--subscription" href="#">Buy now</a>
+                    </div>
+                </div>
+                <div class="subscription_item">
+                    <div class="subscription_type">Premium</div>
+                    <div class="subscription_price">$20.01/ Month</div>
+                    <div class="subscription_privilege">Lorem ipsum</div>
+                    <div class="subscription_privilege">Dolor sit amet, consect</div>
+                    <div class="subscription_privilege">Adipiscing elit</div>
+                    <div class="subscription_privilege">Proin commodo turpis</div>
+                    <div class="subscription_privilege">lacus pulvinarvel</div>
+                    <div class="subscription_privilege">Prnare nisi pretium.</div>
+                    <div class="subscription_btn">
+                        <a class="btn btn--subscription" href="#">Buy now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- =====section===== -->
+    <section class="section">
+        <div class="container">
+            <div class="section_header_bot">
+                <h2 class="section_title"> The Team</h2>
+                <h3 class="section_subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard
+                    dummy text ever since the 500s, when an unknown printer took a galley of type.</h3>
+                <div class="section_author">John Dove</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====footer===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_title">Contact Us</div>
+            <div class="footer_inner">
+                <div class="connection">
+                    <div class="connection_title">Get in touch with us</div>
+                    <div class="connection_subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's</div>
+                    <div class="connection_social">
+                        <a class="social_item social_item--facebook" target="_blank">
+                            <svg class="social_icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="social_item social_item--twitter" target="_blank">
+                            <svg class="social_icon --social_icon_twitter">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a class="social_item social_item--g" target="_blank">
+                            <svg class="social_icon">
+                                <use xlink:href="#G+"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="connection_info">
+                        <span>Cssaauthor.com</span>
+                        <span>+XX-XXXX - XXXX - XX</span>
+                        <span>info@cssauthor.com</span>
+                    </div>
+                </div>
+                <div class="footer_form">
+                    <form class="massage" action="/" method="post">
+                        <div class="m_e">
+                        <input class="massage_email" type="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="m_e">
+                        <input class="massage_name" type="text" name="name" placeholder="Name">
+                        </div>
+                        <div class="m_t">
+                        <input class="massage_text" type="text" name="text" placeholder="Message">
+                        </div>
+                        <div class="m_b">
+                        <button class="massage_btn" type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
